@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Class List 2-3</title>
+
+    <link
+        rel="stylesheet"
+        href="teacherstudent.css"
+    >
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     HEADER
+===================================== -->
+
+<header class="top-bar">
+
+    <div class="profile">
+
+        <div class="profile-icon">
+
+            <div class="profile-head"></div>
+
+            <div class="profile-body"></div>
+
+        </div>
+
+        <span class="username">
+            USER NAME
+        </span>
+
+    </div>
+
+
+    <button
+        class="logout-button"
+        id="logoutButton"
+    >
+        LOGOUT
+    </button>
+
+</header>
+
+
+
+<!-- =====================================
+     MAIN CONTENT
+===================================== -->
+
+<main class="main-container">
+
+
+    <h1>
+        CLASS LIST 2-3
+    </h1>
+
+
+    <!-- =================================
+         CONTROLS
+    ================================== -->
+
+    <div class="controls">
+
+
+        <button
+            class="back-button"
+            id="backButton"
+        >
+            BACK
+        </button>
+
+
+        <div class="date-selector">
+
+            <label for="startDate">
+                START DATE:
+            </label>
+
+            <input
+                type="date"
+                id="startDate"
+            >
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         ATTENDANCE TABLE
+    ================================== -->
+
+    <div class="table-container">
+
+        <table id="attendanceTable">
+
+            <thead>
+
+                <tr>
+
+                    <th class="student-id-column">
+                        STUDENT ID
+                    </th>
+
+
+                    <th class="name-column">
+                        NAME
+                    </th>
+
+
+                    <!-- DATES -->
+
+                    <th
+                        class="date-header"
+                        data-index="0"
+                    >
+                        SEP 1
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="1"
+                    >
+                        SEP 2
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="2"
+                    >
+                        SEP 3
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="3"
+                    >
+                        SEP 4
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="4"
+                    >
+                        SEP 5
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="5"
+                    >
+                        SEP 6
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="6"
+                    >
+                        SEP 7
+                    </th>
+
+                    <th
+                        class="date-header"
+                        data-index="7"
+                    >
+                        SEP 8
+                    </th>
+
+
+                    <th class="total-column">
+                        TOTAL PRESENT
+                    </th>
+
+                </tr>
+
+            </thead>
+
+
+            <tbody id="studentTableBody">
+
+
+                <!-- STUDENT 1 -->
+
+                <tr data-student-id="26-00013">
+
+                    <td>
+                        26-00013
+                    </td>
+
+
+                    <td>
+                        PECASIO, ALNARD V.
+                    </td>
+
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="0"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="1"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="2"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="3"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="4"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="5"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="6"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="7"
+                    ></td>
+
+
+                    <td class="total-present">
+                        0
+                    </td>
+
+                </tr>
+
+
+
+                <!-- STUDENT 2 -->
+
+                <tr data-student-id="26-00012">
+
+                    <td>
+                        26-00012
+                    </td>
+
+
+                    <td>
+                        YAGAMI, LIGH S.
+                    </td>
+
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="0"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="1"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="2"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="3"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="4"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="5"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="6"
+                    ></td>
+
+                    <td
+                        class="attendance-cell"
+                        data-date-index="7"
+                    ></td>
+
+
+                    <td class="total-present">
+                        0
+                    </td>
+
+                </tr>
+
+
+            </tbody>
+
+        </table>
+
+    </div>
+
+
+
+    <!-- =================================
+         LEGEND
+    ================================== -->
+
+    <div class="legend">
+
+        <div class="legend-item">
+
+            <span class="legend-box present">
+                P
+            </span>
+
+            Present
+
+        </div>
+
+
+        <div class="legend-item">
+
+            <span class="legend-box late">
+                L
+            </span>
+
+            Late
+
+        </div>
+
+
+        <div class="legend-item">
+
+            <span class="legend-box absent">
+                A
+            </span>
+
+            Absent
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =================================
+         BUTTONS
+    ================================== -->
+
+    <div class="action-buttons">
+
+
+        <button
+            class="action-button"
+            id="qrButton"
+        >
+            CREATE QR
+            <br>
+            ATTENDANCE
+        </button>
+
+
+        <button
+            class="action-button"
+            id="addStudentButton"
+        >
+            ADD STUDENT
+        </button>
+
+
+        <button
+            class="action-button"
+            id="deleteStudentButton"
+        >
+            DELETE
+            <br>
+            STUDENT
+        </button>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- =====================================
+     ATTENDANCE MODAL
+===================================== -->
+
+<div
+    class="modal"
+    id="attendanceModal"
+>
+
+
+    <div class="modal-content">
+
+
+        <h2>
+            SET ATTENDANCE
+        </h2>
+
+
+        <p id="modalDate">
+            Date
+        </p>
+
+
+        <div class="modal-buttons">
+
+
+            <button
+                class="status-button present-button"
+                data-status="P"
+            >
+                PRESENT
+            </button>
+
+
+            <button
+                class="status-button late-button"
+                data-status="L"
+            >
+                LATE
+            </button>
+
+
+            <button
+                class="status-button absent-button"
+                data-status="A"
+            >
+                ABSENT
+            </button>
+
+
+            <button
+                class="status-button clear-button"
+                data-status=""
+            >
+                CLEAR
+            </button>
+
+
+            <button
+                class="cancel-button"
+                id="cancelButton"
+            >
+                CANCEL
+            </button>
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="teacherstudent.js"></script>
+
+</body>
+
+</html>
