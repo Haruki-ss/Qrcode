@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* Classroom-style background */
+    background:
+        linear-gradient(
+            rgba(255, 255, 255, 0.15),
+            rgba(255, 255, 255, 0.15)
+        ),
+        url("picture/EMAIL.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+    width: 100%;
+    height: 98px;
+
+    background: rgba(90, 90, 90, 0.78);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 23px 0 7px;
+}
+
+
+/* PROFILE */
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+
+    font-size: 39px;
+    color: black;
+}
+
+
+/* PROFILE ICON */
+
+.profile-icon {
+    width: 82px;
+    height: 82px;
+
+    border-radius: 50%;
+
+    background: #eeeeee;
+
+    position: relative;
+}
+
+
+/* HEAD */
+
+.profile-icon .head {
+    position: absolute;
+
+    width: 29px;
+    height: 29px;
+
+    border-radius: 50%;
+
+    background: black;
+
+    top: 16px;
+    left: 27px;
+}
+
+
+/* BODY */
+
+.profile-icon .body {
+    position: absolute;
+
+    width: 51px;
+    height: 29px;
+
+    border-radius: 30px 30px 0 0;
+
+    background: black;
+
+    bottom: 13px;
+    left: 16px;
+}
+
+
+/* LOGOUT */
+
+.logout-btn {
+    width: 138px;
+    height: 46px;
+
+    border: none;
+    border-radius: 25px;
+
+    background: #eeeeee;
+
+    font-size: 17px;
+
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background: white;
+}
+
+
+/* =========================
+   MAIN PANEL
+========================= */
+
+.classes-panel {
+    width: calc(100% - 150px);
+    max-width: 1165px;
+
+    min-height: 505px;
+
+    margin: 21px auto;
+
+    padding: 18px 40px 45px;
+
+    border-radius: 13px;
+
+    background: rgba(100, 100, 100, 0.76);
+}
+
+
+/* TITLE */
+
+.classes-panel h1 {
+    text-align: center;
+
+    color: white;
+
+    font-size: 40px;
+    font-weight: 400;
+
+    line-height: 43px;
+}
+
+
+/* SUBTITLE */
+
+.subtitle {
+    text-align: center;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
+/* CREATE CLASS */
+
+.create-btn {
+    width: 138px;
+    height: 46px;
+
+    margin-top: 7px;
+
+    border: none;
+    border-radius: 24px;
+
+    background: #eeeeee;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+.create-btn:hover {
+    background: white;
+}
+
+
+/* =========================
+   CLASS ROW
+========================= */
+
+#classList {
+    margin-top: 13px;
+}
+
+
+.class-row {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        138px
+        112px;
+
+    gap: 12px;
+
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+
+/* CLASS NAME */
+
+.class-name {
+    height: 46px;
+
+    border: none;
+    border-radius: 24px;
+
+    background: #eeeeee;
+
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.class-name:hover {
+    background: white;
+}
+
+
+/* ACTION BUTTONS */
+
+.action-btn {
+    min-height: 46px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: #eeeeee;
+
+    font-size: 12px;
+
+    line-height: 15px;
+
+    cursor: pointer;
+}
+
+.action-btn:hover {
+    background: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+    .topbar {
+        height: 82px;
+    }
+
+    .profile {
+        font-size: 25px;
+        gap: 12px;
+    }
+
+    .profile-icon {
+        width: 64px;
+        height: 64px;
+    }
+
+    .profile-icon .head {
+        width: 23px;
+        height: 23px;
+
+        top: 12px;
+        left: 21px;
+    }
+
+    .profile-icon .body {
+        width: 40px;
+        height: 24px;
+
+        left: 12px;
+        bottom: 10px;
+    }
+
+    .logout-btn {
+        width: 100px;
+    }
+
+    .classes-panel {
+        width: calc(100% - 24px);
+        padding: 18px 16px 30px;
+    }
+
+    .classes-panel h1 {
+        font-size: 32px;
+    }
+
+    .class-row {
+        grid-template-columns: 1fr;
+    }
+
+    .class-name,
+    .action-btn {
+        width: 100%;
+    }
+}
