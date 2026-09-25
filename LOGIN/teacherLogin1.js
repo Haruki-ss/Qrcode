@@ -16,7 +16,7 @@ function showLogin() {
 
 function login() {
 
-    window.location.href = "http://127.0.0.1:5500/TEACHER%20INTERFACE/CLASSLIST/teacherclass.html";
+    window.location.href = "https://haruki-ss.github.io/Qrcode/CLASSLIST/teacherclass.html";
 }
 
 
