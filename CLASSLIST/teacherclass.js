@@ -1,6 +1,6 @@
 // Select a class
 function selectClass(className) {
-    window.location.href = "http://127.0.0.1:5500/TEACHER%20INTERFACE/STUDENTLIST/teacherstudent.html";
+    window.location.href = "https://haruki-ss.github.io/Qrcode/STUDENTLIST/teacherstudent.html";
     alert("Selected class: " + className);
 }
 
